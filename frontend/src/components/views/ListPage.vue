@@ -1,15 +1,29 @@
 <template>
-  <PlayerList></PlayerList>
+  <h1>List Page</h1>
+  <div>
+    <p>{{showList.name}}</p>
+    <p>{{showList.position}}</p>
+    <p>{{showList.backnumber}}</p>
+  </div>
 </template>
 
 <script>
-  import PlayerList from "@/components/posts/PlayerList.vue";
+import {showPlayerList} from "@/api";
 
-  export default {
-    components: {
-      PlayerList,
+export default {
+  data() {
+    return {
+      name: '',
+      position: '',
+      backnumber: '',
+    }
+  },
+  methods: {
+    showList() {
+      return showPlayerList();
     }
   }
+}
 </script>
 
 <style>

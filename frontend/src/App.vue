@@ -1,18 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/mu.png">
-  <AppHeader></AppHeader>
-  <ListPage></ListPage>
+  <ManUnited></ManUnited> <!-- Main -->
 </template>
 
 <script>
-import AppHeader from './components/common/AppHeader.vue'
-import ListPage from "@/components/views/ListPage.vue";
+import ManUnited from './components/common/ManUnited.vue'
 
 export default {
   name: 'App',
   components: {
-    AppHeader,
-    ListPage,
+    ManUnited,
   }
 }
 </script>
