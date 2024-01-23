@@ -1,15 +1,11 @@
 <template>
-  <ManUnited></ManUnited> <!-- Main -->
+  <router-view></router-view>
 </template>
 
 <script>
-import ManUnited from './components/common/ManUnited.vue'
 
 export default {
   name: 'App',
-  components: {
-    ManUnited,
-  }
 }
 </script>
 

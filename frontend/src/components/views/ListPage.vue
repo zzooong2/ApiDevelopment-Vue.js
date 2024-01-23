@@ -1,27 +1,13 @@
 <template>
-  <h1>List Page</h1>
-  <div>
-    <p>{{showList.name}}</p>
-    <p>{{showList.position}}</p>
-    <p>{{showList.backnumber}}</p>
-  </div>
+  <h1> Manchester United Player List </h1>
+  <ListForm></ListForm>
 </template>
 
 <script>
-import {showPlayerList} from "@/api";
-
+import ListForm from "@/components/posts/ListForm.vue";
 export default {
-  data() {
-    return {
-      name: '',
-      position: '',
-      backnumber: '',
-    }
-  },
-  methods: {
-    showList() {
-      return showPlayerList();
-    }
+  components: {
+    ListForm,
   }
 }
 </script>

@@ -1,11 +1,15 @@
 import {createRouter, createWebHistory} from "vue-router";
 import ListPage from "@/components/views/ListPage.vue";
+import ManUnited from "@/components/common/ManUnited.vue";
 
 const routes = [
     {
-        path: '/mu/players',
+      path: '/',
+      component: ManUnited,
+    },
+    {
+        path: '/list',
         name: 'ListPage',
-        // code-splitting
         component: ListPage,
     },
 ]
@@ -13,7 +17,5 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL), routes
 })
-
-
 
 export default router

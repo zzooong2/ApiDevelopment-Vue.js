@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Manchester United</h1>
-    <router-link to="/mu/players"> Player List </router-link>
+    <router-link to="/list"> ListPage </router-link>
     <img alt="Vue logo" src="@/assets/mu.png">
   </div>
 </template>
